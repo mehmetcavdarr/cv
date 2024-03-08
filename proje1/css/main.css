@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /*sayfadaki linklerin altı cizili özelliği gitmiş oluyo*/
+   color: white;
+}
+
+html{
+
+    font-family: 'Roboto', sans-serif;    /* burda sectiğimiz fonts googledaki fontu kullanabiliyoruz */
+
+}
+#navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 100px;
+}
+#navbar ul{ /* bu kısım listelenen kelimeleri ifade ediyo ve burdan bunları degiştirebiliriz*/
+    list-style-type: none; /* listelenen kısımdaki basındaki noktaları attık*/
+    display: flex; /* yan yana getirdik*/
+    align-items: center;
+}
+#navbar ul li a {
+    padding: 0.75rem;
+    
+}
+#navbar ul li a:hover {
+    background: red; /*imleci ustune getirdiğimizdde rengini kırmızıya dondurduk*/
+    border-radius: 10px; /* ovallestıdık kırmızı rengi*/
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;   /* dikeyde yerleştirmek için boyle yapıyoruz */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid black;
+    
+}
+ 
+#home img{     /* tek img yazıpta da yapabilirdik #home yazmayıp*/
+    height: 500px;
+    border-radius: 100px;
+}
+#home .name{
+    text-align: center;
+}
+#home .name p {
+opacity: 0.6;
+font-style: italic;
+}
+#home a{
+    color: rgb(206, 30, 30);
+    background-color: rgb(10, 189, 238);
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+
+
+}
+#home a:hover {
+    background: white;
+    align-items: center;
+}
+#home .name h2{
+    margin-bottom: 0.75rem;
+    margin-top: 5px;
+}
+#training{
+    color: white;
+    padding: 1rem;
+}
+#training .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#training .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+#training .items .item:hover{
+    color: red;
+    opacity: 0.7;
+}
+#courses{
+    color: #333;
+    padding: 1rem;
+}
+.courses{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.courses .course{
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+.courses .course .course-image{
+   
+    margin-right: 0.5rem;
+    position: relative;   /*span etiketini resmin so kosesıne tasıyacagmız ıcın ana resme bunu yapmamız lazım*/
+
+}
+.courses .course .course-image img{
+    border-radius: 20px;
+    
+}
+.courses .course .course-image span{
+    background-color: red;
+    padding: 0.25rem;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;  /* sol uste yanastırdık top 0 la birlikte*/
+}
+.courses .course .course-info .title{
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.courses .course .course-info .description{
+    letter-spacing: 1.2px;
+    opacity: 0.6;
+    margin-bottom: 0.25rem;
+}
+/* contact */
+#contact{
+    color: white;
+    padding: 1rem;
+}
+#contact .contact-form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+#contact .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center; /*sosyal medya ikonlarını tam ortaya getirdik*/
+}
+#contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+}
+#contact .contact-form ul li a:hover{
+    opacity: 0.6;
+}

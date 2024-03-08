@@ -1,0 +1,19 @@
+h1{
+     color: blue; 
+}
+#navbar{
+    flex-direction: column; /*kucuk px li telefonlarda yazıları alt alta yazdırdık*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;/*imlecle uzerıne geldiğimizde taşma oluyodu bunu onledik*/
+    
+}
+#training .items{
+    flex-direction: column;
+
+}
+#training .items .item{
+    width: 100%;
+}
+.courses .course {
+    flex-direction: column; }   /* resmin altına yazdırdık*/
